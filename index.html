@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darlyn Ty's Portfolio | Professional & Organized</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- External JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <span class="text-xl font-bold text-primary">VA Mom</span>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium text-primary hover:bg-primary hover:text-white">Home</a>
+              <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-primary hover:text-white">Services</a>
+              <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-primary hover:text-white">About</a>
+              <a href="#testimonials" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-primary hover:text-white">Testimonials</a>
+              <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-primary hover:text-white">Contact</a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-primary focus:outline-none">
+              <i data-feather="menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-gray-800">Hi, I'm Darlyn</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-primary">Your Trusted Virtual Assistant</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-lg">Mom by day, organizational ninja by night. Helping busy professionals and entrepreneurs reclaim their time with efficient virtual assistance.</p>
+            <div class="flex space-x-4">
+              <a href="#contact" class="bg-primary hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300">Let's Work Together</a>
+              <a href="#services" class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300">My Services</a>
+            </div>
+          
+            <a href="Darl CV (1).pdf" download class="bg-primary hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 inline-block mt-6">
+              <i data-feather="download" class="mr-2"></i>Download Full Resume
+            </a>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative">
+              <div class="w-64 h-64 md:w-80 md:h-80 bg-primary rounded-full overflow-hidden shadow-xl">
+                <img src="Mama Logo.jpg" alt="Professional VA Mom" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute -bottom-5 -right-5 bg-secondary text-white p-4 rounded-lg shadow-lg">
+                <div class="text-center">
+                  <p class="text-sm font-medium">5+ Years</p>
+                  <p class="font-bold">Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">How I Can Help You</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">From email management to social media, I handle the details so you can focus on what matters most.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+            <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <i data-feather="mail" class="text-primary w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Email Management</h3>
+            <p class="text-gray-600 mb-4">Tame your inbox with efficient organization, filtering, and response handling.</p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Inbox organization</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Priority flagging</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Template responses</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Service Card 2 -->
+          <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+            <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <i data-feather="calendar" class="text-primary w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Calendar Management</h3>
+            <p class="text-gray-600 mb-4">Never miss an appointment with seamless scheduling and reminders.</p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Appointment scheduling</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Meeting coordination</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Time zone management</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Service Card 3 -->
+          <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+            <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <i data-feather="users" class="text-primary w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Social Media Management</h3>
+            <p class="text-gray-600 mb-4">Maintain a consistent online presence without the hassle.</p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Content scheduling</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Engagement tracking</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Basic graphic design</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Service Card 4 -->
+          <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+            <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <i data-feather="file-text" class="text-primary w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Document Preparation</h3>
+            <p class="text-gray-600 mb-4">Professional documents created to your specifications.</p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Reports & presentations</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Spreadsheets & databases</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Formatting & editing</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Service Card 5 -->
+          <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+            <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <i data-feather="shopping-cart" class="text-primary w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Personal Assistance</h3>
+            <p class="text-gray-600 mb-4">Offload personal tasks to free up your valuable time.</p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Gift ordering</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Travel arrangements</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Event planning</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Service Card 6 -->
+          <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+            <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+              <i data-feather="trending-up" class="text-primary w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Special Projects</h3>
+            <p class="text-gray-600 mb-4">Custom solutions for your unique business needs.</p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Research projects</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Data entry</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-secondary mr-2 w-4 h-4"></i>
+                <span>Process documentation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <div class="relative">
+              <img src="http://static.photos/office/640x360/23" alt="Home Office" class="rounded-xl shadow-lg w-full">
+              <div class="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg border border-gray-200">
+                <div class="flex items-center">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-3">
+                    <i data-feather="home" class="text-primary w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-600">Based in</p>
+                    <p class="font-bold">Bicol, Philippines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
+            <p class="text-lg text-gray-600 mb-6">As a mom of four, I've mastered the art of organization, multitasking, and getting things done efficiently. I bring that same level of care and attention to detail to my virtual assistant business.</p>
+            
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">My Approach</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <div class="w-8 h-8 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
+                      <i data-feather="check-circle" class="text-primary w-4 h-4"></i>
+                    </div>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-gray-700">Proactive communication to anticipate your needs</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <div class="w-8 h-8 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
+                      <i data-feather="check-circle" class="text-primary w-4 h-4"></i>
+                    </div>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-gray-700">Discretion and confidentiality with all client information</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <div class="w-8 h-8 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
+                      <i data-feather="check-circle" class="text-primary w-4 h-4"></i>
+                    </div>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-gray-700">Flexible scheduling to accommodate your timezone and needs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">Core Qualifications</h3>
+              <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                <li>5+ years of Customer & Technical Support (Chat, Email, Phone)</li>
+                <li>6 years of People & Talent Management</li>
+                <li>Operations & Process Improvement expertise</li>
+                <li>Proficient with Intuit, Quicken, Photoshop, and CRM tools</li>
+                <li>Strong multitasking and remote collaboration skills</li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-medium text-gray-800 mb-3">When I'm not working...</h4>
+              <p class="text-gray-600">You can find me volunteering at my kids' school, trying new recipes (with varying success), or enjoying Philippines's beautiful hiking trails with my family.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+<section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Experience</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">With over a decade of combined experience in virtual assistance, operations, and customer service, I bring proven systems and leadership to help businesses run smoothly and efficiently.</p>
+    </div>
+
+    <div class="space-y-10">
+      <!-- Job 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800">Shipping Assistant — Conturve LTD</h3>
+        <p class="text-sm text-gray-500 mb-2">Feb 2024 – Sept 2025</p>
+        <ul class="list-disc pl-6 text-gray-600">
+          <li>Handled accurate picking, packing, labeling, and documentation of shipments.</li>
+          <li>Coordinated with couriers, tracked deliveries, and managed inventory levels.</li>
+          <li>Ensured efficient logistics and maintained clean, organized operations.</li>
+        </ul>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800">Executive Assistant — Blake Noe / ReliaBuild (Sphere Rocket)</h3>
+        <p class="text-sm text-gray-500 mb-2">Dec 2021 – Nov 2022</p>
+        <ul class="list-disc pl-6 text-gray-600">
+          <li>Coordinated project timelines, vendor relationships, and client communications.</li>
+          <li>Maintained CRM systems, prepared proposals, and tracked materials and contracts.</li>
+          <li>Provided proactive administrative support to leadership and contractors.</li>
+        </ul>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800">Executive Assistant — OVA Virtual</h3>
+        <p class="text-sm text-gray-500 mb-2">Nov 2020 – Dec 2021</p>
+        <ul class="list-disc pl-6 text-gray-600">
+          <li>Supported research and documentation for community and preservation projects.</li>
+          <li>Coordinated public engagement activities and maintained organized records.</li>
+          <li>Handled communication between consultants, clients, and agencies.</li>
+        </ul>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800">Team Manager — Sutherland Global Services</h3>
+        <p class="text-sm text-gray-500 mb-2">2011 – 2018</p>
+        <ul class="list-disc pl-6 text-gray-600">
+          <li>Supervised and motivated teams to meet KPIs and maintain service quality.</li>
+          <li>Led talent development and succession planning initiatives.</li>
+          <li>Planned, organized, and monitored service delivery for large operations.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Skills Summary -->
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Key Skills & Strengths</h3>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Virtual Assistance</span>
+        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Customer Support</span>
+        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">People Management</span>
+        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Project Coordination</span>
+        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Operations Leadership</span>
+        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Technical Proficiency</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Client Love</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Don't just take my word for it - here's what my clients say</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                <img src="http://static.photos/people/200x200/1" alt="Client" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Clayton Y.</h4>
+                <p class="text-sm text-gray-600">Small Business Owner</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">"Darlynn is a very capable team member that has demonstrated great natural leadership qualities. She
+              shows up on time, and is extremely reliable. Darlynn has been a leader since day one with us and has
+              learned quickly to any challenges thrown at her. . Darlynn leads by example and always makes good
+              sound decisions. She extends herself to help out fellow teammates and clients. Darlynn handles her daily
+              tasks but also recognizes when things need to be addressed before they could become a problem to
+              members and clients. Darlynn truly is an asset to our team in so manys ways and will be missed."</p>
+            <div class="flex text-secondary">
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                <img src="http://static.photos/people/200x200/2" alt="Client" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Jort</h4>
+                <p class="text-sm text-gray-600">Entrepreneur</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">"I hired Dar as a Senior Customer Support Agent for my e-commerce business, and she quickly became one of the most dependeble people on our team. From day one, she was responsive, proactive, and highly proffesional in everything she did. Dar handled customer requests with empathy and precision, often going beyond expectations to ensure every issue was resolved efficiently and kindly"</p>
+            <div class="flex text-secondary">
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                <img src="http://static.photos/people/200x200/3" alt="Client" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Lisa W.</h4>
+                <p class="text-sm text-gray-600">Real Estate Agent</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">"Darl manages my social media so well my engagement has doubled. She understands my brand voice perfectly and suggests content ideas I'd never think of."</p>
+            <div class="flex text-secondary">
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            </div>
+          </div>
+          
+          <!-- Testimonial 4 -->
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                <img src="http://static.photos/people/200x200/4" alt="Client" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">David P.</h4>
+                <p class="text-sm text-gray-600">Consultant</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">"I hesitated to hire a VA, but Darlyn made the transition seamless. Her documentation of my processes was so thorough that when I brought on a second assistant, training was a breeze."</p>
+            <div class="flex text-secondary">
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+              <i data-feather="star" class="w-5 h-5 fill-current"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-primary">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-white mb-4">Let's Work Together</h2>
+          <p class="text-lg text-primary-100 max-w-2xl mx-auto">Ready to reclaim your time? Get in touch to discuss how I can support your business.</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center justify-center">
+              <h3 class="text-xl font-bold text-gray-800 mb-6">Quick Access</h3>
+              <div class="flex flex-col space-y-4 w-full">
+                <a href="https://drive.google.com/file/d/15ukwedW4_Emufbo5aT_RSj2S1xxJFWBy/view?usp=sharing" target="_blank" class="custom-btn">IQ Test</a>
+                <a href="https://drive.google.com/file/d/1j3J6v6iN0UkD4xt0XwVeZq2-2RmOGD-9/view?usp=sharing" target="_blank" class="custom-btn">DISC Result</a>
+                <a href="https://www.16personalities.com/profiles/ee1f324d5616f" target="_blank" class="custom-btn">16Personalities Profile</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="md:w-1/2 md:pl-10">
+            <div class="bg-white bg-opacity-10 p-8 rounded-xl border border-white border-opacity-20 backdrop-filter backdrop-blur-sm">
+              <h3 class="text-xl font-bold text-white mb-6">Contact Info</h3>
+              
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                      <i data-feather="mail" class="text-white w-5 h-5"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-sm font-medium text-primary-100">Email</h4>
+                    <p class="text-white">asiagrammcamsur@gmail.com</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                      <i data-feather="phone" class="text-white w-5 h-5"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-sm font-medium text-primary-100">Phone</h4>
+                    <p class="text-white">+63 926 036 5833</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 mt-1">
+                    <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                      <i data-feather="clock" class="text-white w-5 h-5"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-sm font-medium text-primary-100">Hours</h4>
+                    <p class="text-white">Monday-Friday: 9am-5pm EST</p>
+                    <p class="text-white">Weekends: By appointment</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-10">
+                <h4 class="text-sm font-medium text-white mb-4">Follow Me</h4>
+                <div class="flex space-x-4">
+                  <a href="https://www.facebook.com/darlyn.ty" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                    <i data-feather="facebook" class="text-white w-5 h-5"></i>
+                  </a>
+                  <a href="https://www.instagram.com/darlynoliveros/" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                    <i data-feather="instagram" class="text-white w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <span class="text-xl font-bold text-primary">VA Mom</span>
+            <p class="text-gray-400 mt-2">Helping you focus on what matters most</p>
+          </div>
+          <div class="flex flex-col items-center md:items-end">
+            <div class="flex space-x-6 mb-4">
+              <a href="#home" class="text-gray-400 hover:text-primary transition duration-300">Home</a>
+              <a href="#services" class="text-gray-400 hover:text-primary transition duration-300">Services</a>
+              <a href="#about" class="text-gray-400 hover:text-primary transition duration-300">About</a>
+              <a href="#contact" class="text-gray-400 hover:text-primary transition duration-300">Contact</a>
+            </div>
+            <p class="text-gray-400 text-sm">© 2023 VA Mom. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.createElement('div');
+      mobileMenu.className = 'md:hidden hidden absolute top-16 left-0 w-full bg-white shadow-lg py-2 px-4';
+      
+      mobileMenu.innerHTML = `
+        <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-primary hover:text-white">Home</a>
+        <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-primary hover:text-white">Services</a>
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-primary hover:text-white">About</a>
+        <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-primary hover:text-white">Testimonials</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-primary hover:text-white">Contact</a>
+      `;
+      
+      mobileMenuButton.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.remove('hidden');
+          document.body.appendChild(mobileMenu);
+        } else {
+          mobileMenu.classList.add('hidden');
+          if (document.body.contains(mobileMenu)) {
+            document.body.removeChild(mobileMenu);
+          }
+        }
+      });
+      
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+          if (document.body.contains(mobileMenu)) {
+            document.body.removeChild(mobileMenu);
+          }
+        }
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+      
+      // Initialize feather icons
+      feather.replace();
+    </script>
+</body>
+</html>
