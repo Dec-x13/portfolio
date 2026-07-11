@@ -58,6 +58,104 @@ const Instagram = (props) => (
   </svg>
 );
 
+const toolCategories = [
+  {
+    id: 1,
+    title: "CRM & Support Systems",
+    desc: "Platforms utilized for client lifecycle management, customer ticketing, and operational databases.",
+    tools: [
+      { name: "HubSpot CRM", logo: "hubspot" },
+      { name: "Zoho CRM", logo: "zoho" },
+      { name: "Salesforce", logo: "logos/salesforce.png" },
+      { name: "Pipedrive", logo: "logos/png-transparent-pipedrive-app-logo-tech-companies-thumbnail.png" },
+      { name: "Monday CRM", logo: "logos/monday-logo-png_seeklogo-394605.png" },
+      { name: "Shopify", logo: "shopify" },
+      { name: "Zendesk", logo: "zendesk" },
+      { name: "Oracle", logo: "logos/png-clipart-logo-oracle-corporation-oracle-crm-bluekai-brand-erp-icon-company-text.png" },
+      { name: "Notion", logo: "notion" },
+      { name: "Intercom", logo: "intercom" },
+      { name: "Gorgias", logo: "logos/gorglas.png" },
+      { name: "Re:amaze", logo: "logos/re_amaze.png" },
+      { name: "Follow Up Boss", logo: "logos/FUB Logo Mark RGB_Fub Logo Mark Main.png" },
+      { name: "Connectwise", logo: "logos/connectwise.png" },
+      { name: "KW Command", logo: "logos/KW Command.png" },
+      { name: "GoHighLevel", logo: "logos/GoHigh Level.png" },
+      { name: "Clear Feed", logo: "logos/clearfeed.png" }
+    ]
+  },
+  {
+    id: 2,
+    title: "Communication Apps",
+    desc: "Tools managed daily for synchronizing and aligning distributed remote teams.",
+    tools: [
+      { name: "Slack", logo: "logos/png-transparent-chat-slack-slack-logo-social-media-icon-thumbnail.png" },
+      { name: "MS Teams", logo: "logos/Microsoft-Teams-Logo.png" },
+      { name: "Zoom", logo: "zoom" },
+      { name: "Google Meet", logo: "googlemeet" },
+      { name: "Discord", logo: "discord" },
+      { name: "WhatsApp", logo: "whatsapp" },
+      { name: "Telegram", logo: "telegram" },
+      { name: "RingCentral", logo: "logos/ring_central.png" },
+      { name: "Twilio", logo: "logos/png-transparent-twilio-full-logo-tech-companies-thumbnail.png" },
+      { name: "Phone Quo", logo: "", initials: "PQ" }
+    ]
+  },
+  {
+    id: 3,
+    title: "Reporting & Automations",
+    desc: "Analytical and system connectors to extract reports and automate repeating flows.",
+    tools: [
+      { name: "Tableau", logo: "logos/tableau-software-logo-png_seeklogo-222998.png" },
+      { name: "Power BI", logo: "logos/Power-BI-Logo-2013.png" },
+      { name: "Google Sheets", logo: "googlesheets" },
+      { name: "MS Excel", logo: "logos/png-transparent-microsoft-excel-logo.png" },
+      { name: "Zapier", logo: "zapier" },
+      { name: "Shopify Analytics", logo: "shopify" }
+    ]
+  },
+  {
+    id: 4,
+    title: "Shipping & Logistics Apps",
+    desc: "Fulfillment and courier sync trackers for inventory control and shipment accuracy.",
+    tools: [
+      { name: "Shippo", logo: "logos/shippo.png" },
+      { name: "AfterShip", logo: "aftership" },
+      { name: "FedEx", logo: "fedex" },
+      { name: "UPS", logo: "ups" },
+      { name: "DHL", logo: "dhl" },
+      { name: "17track", logo: "logos/17track-icon-filled-256.png" },
+      { name: "ShipHero", logo: "logos/shiphero.png" },
+      { name: "Logiwa", logo: "logos/logiwa.png" }
+    ]
+  },
+  {
+    id: 5,
+    title: "Financial & Invoicing Tools",
+    desc: "Managing general ledgers, transactions, invoices, and client collection portals.",
+    tools: [
+      { name: "QuickBooks", logo: "quickbooks" },
+      { name: "FreshBooks", logo: "logos/freshbooks-logo-png_seeklogo-431917.png" },
+      { name: "Zoho Books", logo: "zoho" },
+      { name: "Stripe", logo: "stripe" },
+      { name: "PayPal", logo: "paypal" },
+      { name: "Payoneer", logo: "payoneer" }
+    ]
+  },
+  {
+    id: 6,
+    title: "Productivity & Scheduling",
+    desc: "Workspace organization frameworks and calendar automation applications.",
+    tools: [
+      { name: "ClickUp", logo: "clickup" },
+      { name: "Asana", logo: "asana" },
+      { name: "Trello", logo: "trello" },
+      { name: "Todoist", logo: "todoist" },
+      { name: "Workspace", logo: "logos/workspace.jpg" },
+      { name: "Calendly", logo: "calendly" }
+    ]
+  }
+];
+
 const services = [
   {
     id: 1,
@@ -203,7 +301,7 @@ export default function App() {
         <div className="w-full px-8 md:px-16 lg:px-24">
           <div className="flex justify-between h-20 items-center">
             <div className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-serif font-bold text-charcoal tracking-wide">VA Mom</span>
+              <span className="text-2xl font-serif font-bold text-charcoal tracking-wide">Darlyn Ty</span>
             </div>
             
             {/* Desktop Navigation */}
@@ -211,6 +309,7 @@ export default function App() {
               <div className="ml-10 flex items-baseline space-x-8">
                 <a href="#home" onClick={(e) => handleSmoothScroll(e, 'home')} className="px-1 py-2 text-base font-semibold text-charcoal hover:text-secondary transition duration-300">Home</a>
                 <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')} className="px-1 py-2 text-base font-semibold text-charcoal hover:text-secondary transition duration-300">About</a>
+                <a href="#tools" onClick={(e) => handleSmoothScroll(e, 'tools')} className="px-1 py-2 text-base font-semibold text-charcoal hover:text-secondary transition duration-300">Tools</a>
                 <a href="#services" onClick={(e) => handleSmoothScroll(e, 'services')} className="px-1 py-2 text-base font-semibold text-charcoal hover:text-secondary transition duration-300">Services</a>
                 <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')} className="px-1 py-2 text-base font-semibold text-charcoal hover:text-secondary transition duration-300">Experience</a>
                 <a href="#testimonials" onClick={(e) => handleSmoothScroll(e, 'testimonials')} className="px-1 py-2 text-base font-semibold text-charcoal hover:text-secondary transition duration-300">Testimonials</a>
@@ -235,6 +334,7 @@ export default function App() {
           <div className="md:hidden absolute top-20 left-0 w-full bg-cream-100 border-b border-charcoal/10 shadow-sm py-6 px-8 z-50">
             <a href="#home" onClick={(e) => handleSmoothScroll(e, 'home')} className="block py-3 text-lg font-semibold text-charcoal hover:text-secondary">Home</a>
             <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')} className="block py-3 text-lg font-semibold text-charcoal hover:text-secondary">About</a>
+            <a href="#tools" onClick={(e) => handleSmoothScroll(e, 'tools')} className="block py-3 text-lg font-semibold text-charcoal hover:text-secondary">Tools</a>
             <a href="#services" onClick={(e) => handleSmoothScroll(e, 'services')} className="block py-3 text-lg font-semibold text-charcoal hover:text-secondary">Services</a>
             <a href="#experience" onClick={(e) => handleSmoothScroll(e, 'experience')} className="block py-3 text-lg font-semibold text-charcoal hover:text-secondary">Experience</a>
             <a href="#testimonials" onClick={(e) => handleSmoothScroll(e, 'testimonials')} className="block py-3 text-lg font-semibold text-charcoal hover:text-secondary">Testimonials</a>
@@ -244,15 +344,18 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="bg-cream-100 min-h-screen flex items-center pt-28 pb-20 px-8 md:px-16 lg:px-24 border-b border-charcoal/5">
-        <div className="w-full max-w-[1600px] mx-auto">
+      <section id="home" className="relative min-h-screen flex items-center bg-cream-100 border-b border-charcoal/5 overflow-hidden">
+        
+        <div className="w-full max-w-[1600px] mx-auto px-8 md:px-16 lg:px-24 py-20 lg:py-0 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            
+            {/* Left Content Half */}
             <div className="lg:col-span-7 flex flex-col justify-center">
               <span className="text-sm uppercase tracking-widest font-bold text-secondary mb-4 block">Executive Virtual Assistance</span>
               <h1 className="text-6xl md:text-8xl font-serif font-bold leading-none mb-6 text-charcoal">Reclaim Your Time.</h1>
               <h2 className="text-3xl md:text-4xl font-serif italic mb-8 text-primary font-medium">Executive-Level Virtual Assistance for Busy Professionals.</h2>
-              <p className="text-xl text-charcoal/75 mb-10 max-w-2xl leading-relaxed font-sans">
-                Mom by day, organizational ninja by night. Helping busy professionals and entrepreneurs reclaim their time with efficient virtual assistance.
+              <p className="text-xl text-charcoal/75 mb-10 max-w-xl leading-relaxed font-sans">
+                Empowering businesses with efficient support and smart solutions.
               </p>
               <div className="flex flex-wrap gap-4 items-center">
                 <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')} className="bg-primary hover:bg-primary-dark text-cream-100 font-semibold py-4 px-8 rounded-full transition duration-300 tracking-wide text-base">Let's Work Together</a>
@@ -265,21 +368,40 @@ export default function App() {
               </a>
             </div>
             
-            <div className="lg:col-span-5 flex justify-center lg:justify-end">
-              <div className="relative p-3 bg-cream-100 border border-charcoal/10 rounded-2xl">
-                <div className="w-72 h-96 md:w-96 md:h-[500px] overflow-hidden bg-cream-200 rounded-xl">
-                  <img src="Mama Logo.jpg" alt="Professional VA Mom" className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition duration-500" />
+            {/* Right Column: Symmetrically Centered Large Circular visual frame */}
+            <div className="lg:col-span-5 flex items-center justify-center relative mt-12 lg:mt-0">
+              <div className="relative">
+                {/* Offset Circular Golden Card Background */}
+                <div className="absolute inset-0 bg-ochre-light border border-ochre/25 rounded-full translate-x-5 translate-y-5 -z-10 animate-pulse"></div>
+                
+                {/* Enlarged Circular image frame */}
+                <div className="w-[340px] h-[340px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[560px] lg:h-[560px] rounded-full overflow-hidden bg-cream-100 border border-charcoal/10 shadow-lg relative p-3">
+                  <div className="w-full h-full rounded-full overflow-hidden relative bg-cream-200">
+                    <img 
+                      src="Mama_Hero_Image.png" 
+                      alt="Professional VA Mom" 
+                      className="w-full h-full object-cover object-[position:84%_center] transition duration-500 hover:scale-[1.02]" 
+                    />
+                    {/* Color Blending Overlays */}
+                    <div className="absolute inset-0 bg-ochre/12 mix-blend-color pointer-events-none"></div>
+                    <div className="absolute inset-0 bg-secondary/5 mix-blend-multiply pointer-events-none"></div>
+                  </div>
                 </div>
-                <div className="absolute -bottom-6 -left-6 bg-ochre text-cream-100 p-5 border border-charcoal/5 rounded-2xl shadow-sm">
+                
+                {/* Experience Badge sitting at the bottom-right of the circular region */}
+                <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 bg-ochre text-cream-100 p-5 md:p-6 border border-charcoal/5 rounded-2xl shadow-xl z-20">
                   <div className="text-center">
-                    <p className="text-xs uppercase tracking-widest font-semibold font-sans mb-1">Experience</p>
-                    <p className="text-3xl font-serif font-bold">15+ Years</p>
+                    <p className="text-[10px] uppercase tracking-widest font-semibold font-sans mb-0.5 text-cream-100/90">Experience</p>
+                    <p className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold">15+ Years</p>
+                    <p className="text-[9px] uppercase tracking-widest font-semibold font-sans text-cream-100/70">Management</p>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+
       </section>
 
       {/* About & Credentials (Bento Grid) */}
@@ -357,7 +479,7 @@ export default function App() {
                     <div>
                       <div className="flex justify-between text-sm mb-1.5">
                         <span className="font-medium text-charcoal">I — Influence (Collaborative, Open)</span>
-                        <span class="font-bold text-charcoal">75%</span>
+                        <span className="font-bold text-charcoal">75%</span>
                       </div>
                       <div className="w-full bg-cream-100 h-2 rounded-full overflow-hidden">
                         <div className="bg-primary h-full rounded-full" style={{ width: '75%' }}></div>
@@ -423,7 +545,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Bento Item 4: Verification Badges (Ochre Container) */}
+            {/* Bento Item 4: Verification Badges */}
             <div className="lg:col-span-1 p-8 rounded-3xl flex flex-col justify-between bg-ochre-light border border-ochre/20 text-[#8C6D3D]">
               <div>
                 <h3 className="text-3xl font-serif text-[#785A2E] mb-6">Official Verification</h3>
@@ -454,6 +576,55 @@ export default function App() {
                 <CheckCircle className="w-4 h-4 text-ochre" />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools & Systems Section */}
+      <section id="tools" className="py-28 px-8 md:px-16 lg:px-24 bg-ochre-light/40 border-b border-charcoal/5">
+        <div className="w-full max-w-[1600px] mx-auto">
+          <div className="text-center mb-20">
+            <span className="text-sm uppercase tracking-wider font-semibold text-[#8C6D3D] mb-3 block">Software Stack</span>
+            <h2 className="text-5xl md:text-6xl font-serif text-charcoal mb-4">Tools & Systems</h2>
+            <p className="text-xl text-charcoal/70 max-w-2xl mx-auto font-sans">Deep technical proficiency in industry-leading business and administrative platforms.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {toolCategories.map((category) => (
+              <div key={category.id} className="flat-card p-8 rounded-3xl bg-cream-100 flex flex-col justify-between hover:border-ochre/40">
+                <div>
+                  <h3 className="text-2xl font-serif text-charcoal mb-3 border-b border-charcoal/5 pb-3">{category.title}</h3>
+                  <p className="text-sm text-charcoal/60 mb-6 font-sans leading-relaxed">{category.desc}</p>
+                  
+                  {/* Grid of Brand App Icons */}
+                  <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-4 lg:grid-cols-5 gap-y-6 gap-x-4 justify-items-center mt-6">
+                    {category.tools.map((tool, idx) => (
+                      <div key={idx} className="group flex flex-col items-center">
+                        {/* App Icon Box */}
+                        <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-cream-100 border border-charcoal/8 rounded-2xl hover:border-ochre hover:shadow-md transition duration-300 p-2.5 md:p-3 relative cursor-default">
+                          {tool.logo ? (
+                            <img 
+                              src={tool.logo.includes('/') ? tool.logo : `https://cdn.simpleicons.org/${tool.logo}`} 
+                              alt={tool.name} 
+                              className="w-full h-full object-contain filter group-hover:scale-105 transition duration-300"
+                              onError={(e) => { e.target.style.display = 'none'; }}
+                            />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center bg-cream-200 rounded-lg text-charcoal/80 font-bold text-xs md:text-sm tracking-tight select-none">
+                              {tool.initials}
+                            </div>
+                          )}
+                        </div>
+                        {/* Tool Caption */}
+                        <span className="text-[11px] font-semibold text-charcoal/60 mt-2 text-center leading-tight max-w-[68px] truncate group-hover:text-charcoal transition duration-200">
+                          {tool.name}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -682,6 +853,7 @@ export default function App() {
               <div className="flex space-x-6 mb-4">
                 <a href="#home" onClick={(e) => handleSmoothScroll(e, 'home')} className="text-cream-100/70 hover:text-secondary transition duration-300 text-base">Home</a>
                 <a href="#about" onClick={(e) => handleSmoothScroll(e, 'about')} className="text-cream-100/70 hover:text-secondary transition duration-300 text-base">About</a>
+                <a href="#tools" onClick={(e) => handleSmoothScroll(e, 'tools')} className="text-cream-100/70 hover:text-secondary transition duration-300 text-base">Tools</a>
                 <a href="#services" onClick={(e) => handleSmoothScroll(e, 'services')} className="text-cream-100/70 hover:text-secondary transition duration-300 text-base">Services</a>
                 <a href="#testimonials" onClick={(e) => handleSmoothScroll(e, 'testimonials')} className="text-cream-100/70 hover:text-secondary transition duration-300 text-base">Testimonials</a>
                 <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')} className="text-cream-100/70 hover:text-secondary transition duration-300 text-base">Contact</a>
