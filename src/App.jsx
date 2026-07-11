@@ -846,7 +846,7 @@ export default function App() {
         <div className="w-full max-w-[1600px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <span className="text-2xl font-serif font-bold text-cream-100 tracking-wide">VA Mom</span>
+              <span className="text-2xl font-serif font-bold text-cream-100 tracking-wide">Darlyn Ty</span>
               <p className="text-cream-100/60 text-base mt-2 font-sans">Helping you focus on what matters most</p>
             </div>
             <div className="flex flex-col items-center md:items-end font-sans">
